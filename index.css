@@ -53,6 +53,7 @@ box-sizing: border-box;
 
 .nav-bar a:hover{
 text-decoration: underline;
+color: yellow;
 }
 
 .nav-search{
