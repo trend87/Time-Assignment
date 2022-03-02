@@ -140,6 +140,8 @@ nav a:hover{
   margin-left:10px ;
   float: right;
   margin-top: 35px;
+  width: 400px;
+  
 }
 .image-container p{
   text-align: left;
@@ -151,15 +153,15 @@ nav a:hover{
 .box li{
   display: inline-block;
   text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-right: 30px;
+  padding: 10px;
+  margin: 0 10px;
   border-bottom: 1px dotted rgb(200, 200, 200);
   border-top: 1px dotted rgb(200, 200, 200);
+  font-size: 18px;
 
 }
 .box p{
-  text-align: center;
+text-align: center;
 }
 .post {
   display: block;
@@ -167,15 +169,12 @@ nav a:hover{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width:70%;
   padding: 20px;
-
-  border: 2px solid green;
   text-align: justify;
  
 }
 .container{
   display: flex;
   background-color: white;
-  border: 5px solid red;
   width: 100%;
  
 }
@@ -188,10 +187,9 @@ p.intro::first-letter{
 }
 
 .social-links-two{
-  padding: 0;
-  margin: 0;
+padding: 0;
+margin: 0;
 list-style-type: none;
-
 }
 .social-links-two li{
   display: inline;
@@ -206,12 +204,8 @@ list-style-type: none;
   margin-top: 10px;
   margin-left: 10px;
   text-align: center;
-  border: 5px solid yellow;
 }
 
-.side_bar > h4{
-  
-}
 .side{
   display: block;
   margin: 20px;
