@@ -1,3 +1,4 @@
+/* This section contains css styles for desktop/laptop devices*/
 *{
 box-sizing: border-box;
 }
@@ -36,7 +37,9 @@ box-sizing: border-box;
    float: left;
    
 }
-
+.bars{
+  display: none;
+}
 .nav-bar a{
     display: block;
     text-decoration: none;
@@ -172,6 +175,17 @@ text-align: center;
   text-align: justify;
  
 }
+.post h1{
+  font-size: 40px;
+  margin: 0;
+}
+.post a{
+  text-decoration: none;
+  color: darkred;
+}
+.post a:hover{
+  text-decoration: underline;
+}
 .container{
   display: flex;
   background-color: white;
@@ -197,7 +211,6 @@ list-style-type: none;
 
 .side_bar{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: sticky;
   border: 5px solid #f1f1f1;
   display: block;
   width: 30%;
@@ -211,12 +224,20 @@ list-style-type: none;
   margin: 20px;
   padding: 10px;
 }
+.side a{
+  color: darkred;
+  text-decoration: none;
+}
+.side a:hover{
+  text-decoration: underline;
+}
 .widget{
  padding: 0;
  margin: 0;
  text-align: center;
  display: flex;
  line-height: 1.5;
+ background-color: darkred;
  }
  .widget li{
   list-style-type: none;
@@ -225,12 +246,12 @@ list-style-type: none;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    color: black;
+    color: white;
     
   }
   .widget a:hover{
     text-decoration: underline;
-    color: darkred;
+    color: yellow;
   }
 .widget > div{
   margin: 0 70px;
@@ -240,5 +261,90 @@ list-style-type: none;
 footer{
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: darkred;
+  color: white;
+  padding: 20px 0;
+}
+
+
+/* This section contains CSS Style for mobile devices*/
+@media only screen and (max-width: 700px) {
+  .bars{
+    display: inline;
+    color: white;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+ 
+.nav-bar a{
+  display: inline;
+}
+.nav-bar li{
+  padding: 20px 0;
+}
+  nav{
+    display: none;
+  }
+  .image-container{
+   text-align: center;
+    display: block;
+    width: 100%;
+    border-image: 200px;
+  }
+  .image-container > p{
   
+    text-align: center;
+  }
+  .post{
+    display: block;
+    width: 100%;
+  }
+  .post a{
+    text-decoration: none;
+    color: darkred;
+  }
+  .post a:hover{
+    text-decoration: underline;
+  }
+  .post h1{
+    font-size: 30px;
+   }
+  .box{
+    display: none;
+  }
+  .container{
+    display: block;
+    width: 100%;
+  }
+.nav-search{
+  display: none;
+}
+.widget{
+  display: block;
+  background-color: darkred;
+  color: white;
+}
+.widget a{
+  color: white;
+}
+.widget a:hover{
+  text-decoration: underline;
+  color: yellow;
+}
+.side_bar{
+  display: block;
+  width: 100%;
+}
+.side_bar h4{
+  font-size: 20px;
+}
+.side p{
+  
+}
+.footer{
+  text-align: center;
+  
+}
+
+
 }
